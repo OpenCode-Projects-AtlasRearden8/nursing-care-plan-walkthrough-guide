@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Care Plans, Explained Like a Friend Would. A beginner-friendly walkthrough for nursing students. Education only, never medical advice.">
+<title>Care Plans, Explained Like a Friend Would &#8212; Nursing Student Walkthrough</title>
+<style>
+  :root{ --ink:#1c2733; --teal:#0e7c7b; --teal-dark:#095f5e; --sand:#faf6ef; --card:#ffffff; --line:#e3dcd0; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--sand); color:var(--ink); font-family:Georgia,'Times New Roman',serif; line-height:1.65; }
+  header{ background:var(--teal); color:#fff; padding:2.2rem 1rem 1.6rem; text-align:center; }
+  header h1{ margin:0 0 .4rem; font-size:1.9rem; }
+  header p{ margin:.2rem 0; max-width:46rem; margin-inline:auto; opacity:.95; }
+  .tagline{ font-style:italic; }
+  nav{ max-width:52rem; margin:1.4rem auto; padding:0 1rem; }
+  main{ max-width:52rem; margin:0 auto; padding:0 1rem 3rem; }
+  section.card{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.4rem 1.6rem; margin:1.2rem 0; }
+  h2{ font-family:Verdana,Arial,sans-serif; color:var(--teal-dark); font-size:1.15rem; letter-spacing:.3px; margin-top:0; }
+  a{ color:var(--teal-dark); }
+  .chapters{ list-style:none; padding:0; margin:0; }
+  .chapters li{ padding:.55rem 0; border-bottom:1px dashed var(--line); }
+  .chapters li:last-child{ border-bottom:none; }
+  .chapters a{ text-decoration:none; font-weight:bold; }
+  .loop{ width:100%; border-collapse:collapse; margin:.6rem 0; }
+  .loop td{ border:1px solid var(--line); padding:.6rem .8rem; text-align:center; font-family:Verdana,Arial,sans-serif; font-size:.85rem; }
+  .loop td em{ color:var(--teal-dark); }
+  .disclaimer{ background:#fff7e6; border:1px solid #e8d9ad; border-radius:10px; padding:1rem 1.2rem; font-size:.95rem; }
+  .cta{ display:inline-block; background:var(--teal); color:#fff; text-decoration:none; padding:.7rem 1.4rem; border-radius:8px; font-family:Verdana,Arial,sans-serif; font-size:.95rem; margin-top:.5rem; }
+  .cta:hover{ background:var(--teal-dark); }
+  footer{ text-align:center; padding:1.5rem 1rem 2.5rem; font-size:.85rem; color:#5a6672; }
+  .muted{ color:#5a6672; font-size:.9rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Care Plans, Explained Like a Friend Would</h1>
+  <p class="tagline">A calm, plain-English walkthrough for nursing students. No jargon walls, no condescension.</p>
+  <p>Education only &middot; never medical advice &middot; never patient data</p>
+</header>
+
+<nav>
+  <section class="card">
+    <h2>Start with the map</h2>
+    <p>A nursing care plan is just four questions written down:</p>
+    <table class="loop">
+      <tr><td><em>1. What's going on?</em><br>assessment &rarr; cues &rarr; diagnosis</td></tr>
+      <tr><td><em>2. What should be different, by when?</em><br>SMART goals</td></tr>
+      <tr><td><em>3. What are we doing about it?</em><br>interventions</td></tr>
+      <tr><td><em>4. Did it work?</em><br>evaluation (and revise)</td></tr>
+    </table>
+    <p class="muted">Each step below has a friendly markdown chapter in the <code>docs/</code> folder.</p>
+  </section>
+</nav>
+
+<main>
+  <section class="card">
+    <h2>The five chapters</h2>
+    <ul class="chapters">
+      <li><a href="../docs/01-assessment-cues.md">01 &mdash; Assessment Cues</a> &mdash; noticing, clustering, and writing neutral specifics</li>
+      <li><a href="../docs/02-nanda-style-language.md">02 &mdash; NANDA-Style Language</a> &mdash; problem + related to + as evidenced by</li>
+      <li><a href="../docs/03-smart-goals.md">03 &mdash; SMART Goals</a> &mdash; goals a stranger could grade</li>
+      <li><a href="../docs/04-interventions.md">04 &mdash; Interventions</a> &mdash; verb + action + frequency + method</li>
+      <li><a href="../docs/05-evaluation.md">05 &mdash; Evaluation</a> &mdash; met, partially met, unmet &mdash; honestly</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Extras</h2>
+    <ul class="chapters">
+      <li><a href="../docs/00-read-me-first.md">Read Me First</a> &mdash; ground rules and how the guide fits together</li>
+      <li><a href="../docs/06-worked-example.md">A Worked Example</a> &mdash; one fictional plan, start to finish</li>
+      <li><a href="../docs/07-glossary-cheatsheet.md">Glossary &amp; Cheat Sheet</a> &mdash; definitions plus a pre-submission checklist</li>
+      <li><a href="worksheet.html">Blank Care-Plan Worksheet</a> &mdash; fill in on screen or print it</li>
+    </ul>
+  </section>
+
+  <section class="disclaimer card">
+    <h2 style="color:#8a6a1f;">Please read the small print</h2>
+    <p>This site is <strong>educational material only</strong>. It is not medical advice, not a clinical decision tool, and not a documentation template for real patient records. Real patient questions belong with your instructor, preceptor, or care team. Please never enter real patient information anywhere on this site or in the worksheet &mdash; practice with fictional case studies from your program.</p>
+    <a class="cta" href="worksheet.html">Open the blank worksheet &rarr;</a>
+  </section>
+</main>
+
+<footer>
+  Built with care by Asdale Dynamics, LLC &middot; plain-English, step-by-step, never condescending<br>
+  MIT License &middot; <a href="https://dylanasdale.github.io">dylanasdale.github.io</a>
+</footer>
+</body>
+</html>

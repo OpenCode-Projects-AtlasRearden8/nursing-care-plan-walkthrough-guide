@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blank nursing care plan worksheet for students. Practice only. Never enter real patient information.">
+<title>Blank Care-Plan Worksheet &#8212; Practice Only</title>
+<style>
+  :root{ --ink:#1c2733; --teal:#0e7c7b; --teal-dark:#095f5e; --sand:#faf6ef; --card:#ffffff; --line:#d8cfc0; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--sand); color:var(--ink); font-family:Georgia,'Times New Roman',serif; line-height:1.6; }
+  header{ background:var(--teal); color:#fff; padding:1.8rem 1rem 1.2rem; text-align:center; }
+  header h1{ margin:0 0 .3rem; font-size:1.5rem; font-family:Verdana,Arial,sans-serif; }
+  header p{ margin:.2rem 0; font-size:.95rem; }
+  .toolbar{ max-width:56rem; margin:1rem auto 0; padding:0 1rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ background:var(--teal); color:#fff; border:none; border-radius:8px; padding:.6rem 1.2rem; font-family:Verdana,Arial,sans-serif; font-size:.9rem; cursor:pointer; text-decoration:none; display:inline-block; }
+  .btn:hover{ background:var(--teal-dark); }
+  .btn.ghost{ background:transparent; color:var(--teal-dark); border:1.5px solid var(--teal-dark); }
+  .banner{ max-width:56rem; margin:1rem auto; padding:.8rem 1.2rem; background:#fff7e6; border:1px solid #e8d9ad; border-radius:10px; font-size:.9rem; text-align:center; }
+  main{ max-width:56rem; margin:0 auto 3rem; padding:0 1rem; }
+  section.card{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.3rem 1.5rem; margin:1.1rem 0; }
+  section.card h2{ margin-top:0; font-family:Verdana,Arial,sans-serif; color:var(--teal-dark); font-size:1.05rem; letter-spacing:.3px; }
+  section.card .hint{ font-size:.85rem; color:#5a6672; margin-top:0; }
+  label{ display:block; font-family:Verdana,Arial,sans-serif; font-size:.8rem; text-transform:uppercase; letter-spacing:.5px; color:#5a6672; margin:.8rem 0 .25rem; }
+  textarea{ width:100%; border:1px solid var(--line); border-radius:8px; padding:.6rem; font-family:Georgia,serif; font-size:1rem; resize:vertical; background:#fffdf7; }
+  textarea:focus{ outline:2px solid var(--teal); }
+  table.goal{ width:100%; }
+  table.goal td{ padding:.25rem; }
+  table.goal textarea{ min-height:3.2rem; }
+  .radio-row{ display:flex; gap:1.4rem; align-items:center; font-family:Verdana,Arial,sans-serif; font-size:.9rem; margin:.4rem 0; flex-wrap:wrap; }
+  fieldset{ border:1px solid var(--line); border-radius:8px; margin:.6rem 0 .2rem; padding:.6rem .9rem; }
+  legend{ font-family:Verdana,Arial,sans-serif; font-size:.8rem; color:#5a6672; padding:0 .4rem; }
+  footer{ text-align:center; padding:1rem 1rem 2.5rem; font-size:.8rem; color:#5a6672; }
+  @media print{
+    body{ background:#fff; }
+    .toolbar, header p.tagline, .banner{ display:none; }
+    header{ background:#fff; color:#000; border-bottom:2px solid #000; }
+    section.card{ border:1px solid #999; border-radius:0; page-break-inside:avoid; }
+    textarea{ border:1px solid #999; background:#fff; min-height:3.5rem; }
+    .btn{ display:none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Blank Care-Plan Worksheet</h1>
+  <p class="tagline">Practice only &mdash; use fictional case studies. Never enter real patient information.</p>
+</header>
+
+<div class="toolbar">
+  <button class="btn" type="button" onclick="window.print()">&#128424; Print blank / filled copy</button>
+  <button class="btn ghost" type="button" onclick="clearAll()">&#10005; Clear everything</button>
+  <a class="btn ghost" href="index.html">&larr; Back to the guide</a>
+</div>
+
+<div class="banner">
+  <strong>Education only.</strong> This worksheet is a study aid, not medical advice and not a charting template.
+  Nothing is saved or transmitted &mdash; closing the tab clears it.
+</div>
+
+<main>
+  <section class="card">
+    <h2>Step 0 &mdash; Case study information</h2>
+    <p class="hint">Fictional scenario only. No names of real people, no room numbers, no real dates.</p>
+    <label for="scenario">Fictional case study summary (from your program materials)</label>
+    <textarea id="scenario" rows="3" placeholder="e.g., Simulated case study from class: a student athlete with an ankle sprain, two days post-injury. (Make up your own details.)"></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Step 1 &mdash; Assessment cues</h2>
+    <p class="hint">Neutral, specific, verifiable. Subjective and objective. Then cluster related ones.</p>
+    <label for="cues-subj">Subjective cues &mdash; what the (fictional) patient reports</label>
+    <textarea id="cues-subj" rows="4" placeholder="e.g., states pain 6/10 when walking on level ground"></textarea>
+    <label for="cues-obj">Objective cues &mdash; what you observe or measure</label>
+    <textarea id="cues-obj" rows="4" placeholder="e.g., walks 15 feet with crutches, guards ankle, mild swelling (fictional exam findings)"></textarea>
+    <label for="cues-clusters">Your clusters &mdash; group the cues into patterns</label>
+    <textarea id="cues-clusters" rows="3" placeholder="e.g., Cluster 1: pain with weight-bearing (cue 1, cue 3). Cluster 2: fear of walking alone (cue 2, cue 4)."></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Step 2 &mdash; Nursing diagnosis (PES)</h2>
+    <p class="hint">Pattern: [problem] related to [nursing-actionable cause] as evidenced by [cues]. Verify exact label wording in your program's approved NANDA-I reference.</p>
+    <label for="dx-problem">Problem (P)</label>
+    <textarea id="dx-problem" rows="2" placeholder="e.g., Impaired walking"></textarea>
+    <label for="dx-related">Related to (E) &mdash; something nursing can act on</label>
+    <textarea id="dx-related" rows="2" placeholder="e.g., related to pain with weight bearing (per your reference wording)"></textarea>
+    <label for="dx-evidence">As evidenced by (S) &mdash; pick 2&ndash;4 cues</label>
+    <textarea id="dx-evidence" rows="3" placeholder="e.g., as evidenced by guarded gait and stated pain with walking"></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Step 3 &mdash; SMART goals</h2>
+    <p class="hint">Start with &ldquo;Patient will&hellip;&rdquo; &mdash; measurable verb, condition, deadline. A stranger should be able to grade it.</p>
+    <table class="goal">
+      <tr>
+        <td style="width:22%"><label for="goal-st">&mdash; Short-term goal</label></td>
+        <td><textarea id="goal-st" rows="2" placeholder="e.g., Patient will ambulate 40 feet with crutches using correct gait by [date]"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="goal-lt">&mdash; Long-term goal</label></td>
+        <td><textarea id="goal-lt" rows="2" placeholder="e.g., Patient will ambulate 200 feet independently by discharge (fictional [date])"></textarea></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Step 4 &mdash; Interventions</h2>
+    <p class="hint">Verb + action + frequency + method. Each one traces to the etiology or the goal. Mark independent vs. collaborative.</p>
+    <label for="interventions">Your interventions</label>
+    <textarea id="interventions" rows="8" placeholder="1. Instruct patient in correct crutch gait; observe return demonstration once daily (independent).&#10;2. Assess pain (0&ndash;10 scale) before and after ambulation once per shift (independent).&#10;3. Coordinate scheduled analgesic timing with ambulation sessions, per provider order (collaborative).&#10;4."></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Step 5 &mdash; Evaluation</h2>
+    <p class="hint">At the stated time, with the stated measure: met / partially met / unmet + the evidence + what's next.</p>
+    <fieldset>
+      <legend>Status (check when evaluating at the deadline)</legend>
+      <div class="radio-row">
+        <span><input type="radio" id="ev-met" name="ev-status" value="met"> <label for="ev-met" style="display:inline;text-transform:none;">Met</label></span>
+        <span><input type="radio" id="ev-part" name="ev-status" value="partially met"> <label for="ev-part" style="display:inline;text-transform:none;">Partially met</label></span>
+        <span><input type="radio" id="ev-unmet" name="ev-status" value="unmet"> <label for="ev-unmet" style="display:inline;text-transform:none;">Unmet</label></span>
+      </div>
+    </fieldset>
+    <label for="eval-writing">Evaluation &mdash; status + evidence + next step</label>
+    <textarea id="eval-writing" rows="4" placeholder="e.g., Partially met: ambulated 25 feet with correct gait (target 40) by [date]; continue daily practice; reassess remaining 15 feet at next goal point."></textarea>
+  </section>
+</main>
+
+<footer>
+  Blank worksheet &mdash; Care Plans, Explained Like a Friend Would<br>
+  An education project by Asdale Dynamics, LLC &middot; MIT License &middot; practice only, always
+</footer>
+
+<script>
+  function clearAll(){
+    if (confirm("Clear every field on this worksheet?")){
+      document.querySelectorAll("textarea").forEach(function(t){ t.value=""; });
+      document.querySelectorAll('input[name="ev-status"]').forEach(function(r){ r.checked=false; });
+    }
+  }
+</script>
+</body>
+</html>
